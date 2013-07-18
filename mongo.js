@@ -13,7 +13,8 @@
 // 	db.close();
 // });
 
-var MONGOHQ_URL = 'mongodb://admin:admin@ds061747.mongolab.com:61747/herryassets';
+//var MONGOHQ_URL = 'mongodb://admin:admin@ds061747.mongolab.com:61747/herryassets';
+var MONGOHQ_URL = "mongodb://admin:admin@widmore.mongohq.com:10000/restapp"
 var mongodb = require('mongodb');
 var url = require('url');
 var log = console.log;
