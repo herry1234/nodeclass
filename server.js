@@ -1,5 +1,6 @@
 var http = require('http');
 var url = require('url');
+var util = require('util');
 var port = process.env.PORT || 1337;
 var MONGOHQ_URL = 'mongodb://admin:admin@ds061747.mongolab.com:61747/herryassets';
 var mongodb = require('mongodb');
@@ -19,8 +20,10 @@ db.open(function(e, c) {
 		res.writeHead(200, {
 			'Content-Type': 'text/plain'
 		});
-		//outputs string with line end symbol
-		res.end("MongoDB connected: " + db._state);
+		//outputs string with 
+		res.end(util.inspect(db));
+		//res.end("MongoDB connected: " + db._state);
+
 	});
 	//sets port and IP address of the server
 	server.listen(port, function() {
