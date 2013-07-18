@@ -1,7 +1,9 @@
 {
 	"name": "node-class",
 	"version": "0.0.1",
-	"dependencies": {},
+	"dependencies": {
+		"mongodb" : ""
+		},
 	"engines": {
 		"node": "0.10.12"
 	}
