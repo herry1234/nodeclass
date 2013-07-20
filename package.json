@@ -2,8 +2,10 @@
 	"name": "node-class",
 	"version": "0.0.1",
 	"dependencies": {
-		"mongodb" : ""
-		},
+		"mongodb": "",
+		"express": "",
+		"monk": ""
+	},
 	"engines": {
 		"node": "0.10.12"
 	}
